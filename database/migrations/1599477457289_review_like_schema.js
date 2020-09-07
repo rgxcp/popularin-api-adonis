@@ -4,14 +4,17 @@
 const Schema = use('Schema')
 
 class ReviewLikeSchema extends Schema {
-  up () {
+  up() {
     this.create('review_likes', (table) => {
-      table.increments()
-      table.timestamps()
+      table.increments('id')
+      table.integer('user_id').unsigned().notNullable()
+      table.integer('review_id').unsigned().notNullable()
+      table.timestamp('created_at').nullable()
+      table.timestamp('updated_at').nullable()
     })
   }
 
-  down () {
+  down() {
     this.drop('review_likes')
   }
 }

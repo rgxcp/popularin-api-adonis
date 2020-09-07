@@ -4,14 +4,17 @@
 const Schema = use('Schema')
 
 class FollowingSchema extends Schema {
-  up () {
+  up() {
     this.create('followings', (table) => {
-      table.increments()
-      table.timestamps()
+      table.increments('id')
+      table.integer('user_id').unsigned().notNullable()
+      table.integer('following_id').unsigned().notNullable()
+      table.timestamp('created_at').nullable()
+      table.timestamp('updated_at').nullable()
     })
   }
 
-  down () {
+  down() {
     this.drop('followings')
   }
 }
