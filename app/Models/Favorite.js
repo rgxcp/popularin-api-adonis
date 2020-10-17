@@ -3,7 +3,6 @@
 /** @type {typeof import('@adonisjs/lucid/src/Lucid/Model')} */
 const Model = use('Model')
 
-class Favorite extends Model {
-}
+class Favorite extends Model {}
 
 module.exports = Favorite

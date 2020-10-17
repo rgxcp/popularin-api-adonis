@@ -9,7 +9,10 @@ class CommentSchema extends Schema {
       table.increments('id')
       table.integer('user_id').unsigned().notNullable()
       table.integer('review_id').unsigned().notNullable()
-      table.string('comment_detail', 300).notNullable().collate('utf8mb4_unicode_ci')
+      table
+        .string('comment_detail', 300)
+        .notNullable()
+        .collate('utf8mb4_unicode_ci')
       table.date('comment_date').notNullable()
       table.timestamp('created_at').nullable()
       table.timestamp('updated_at').nullable()
