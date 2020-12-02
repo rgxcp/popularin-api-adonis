@@ -4,7 +4,7 @@
 **ID**: API untuk Popularin - Sosial media film Indonesia.
 
 ## Status
-DEVELOPING
+ABANDONED
 
 ## Requirements
 1. Node.js
