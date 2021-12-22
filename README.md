@@ -1,7 +1,5 @@
-# 💡 JavaScript - Adonis.js - Popularin API
-**EN**: API for Popularin - Indonesian film social media.
-
-**ID**: API untuk Popularin - Sosial media film Indonesia.
+# 💡 Popularin API Adonis
+API for Popularin - Indonesian film social media.
 
 ## Status
 ABANDONED
